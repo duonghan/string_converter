@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body style="width: 300px; height: 400px;">
+    <div class="container" style="margin-bottom: 5em;">
+      <form>
+        <div class="form-group">
+          <label for="optionalMethod">Encoders/Decoders</label>
+          <select class="form-control" id="optionalMethod">
+            <option>Base64 Decoder</option>
+            <option>Base64 Encoder</option>
+            <option>Hex Decoder</option>
+            <option>Hex Encoder</option>
+            <option>Url Decoder</option>
+            <option>Url Encoder</option>
+            <option>Html Decoder</option>
+            <option>Html Encoder</option>
+          </select>
+        </div>
+      </form>
+      <br>
+      <textarea  class="form-control" id="inputString" placeholder="Input string"></textarea>
+      <br>
+      <div class="text-center">
+        <button type="button" class="btn btn-outline-primary btn-sm" id="btnConvert">Convert</button>
+      </div>
+      <br>
+      <textarea class="form-control" id="outputString" placeholder="Output string"></textarea>
+      <br>
+      <div class="alert alert-success" role="alert" id="alertCopyResult" style="display: none"/>
+    </div>
+  </body>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="popup.js"></script>
+</html>

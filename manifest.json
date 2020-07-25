@@ -1,0 +1,22 @@
+{
+  "name": "Hex Decoder",
+  "version": "1.0",
+  "description": "Hex Decoder",
+  "permissions": ["contextMenus", "activeTab", "declarativeContent", "storage"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Hex Decoder - Developed by Han Duong"
+  },
+  "default_locale": "en",
+  "icons": {
+    "16": "images/convert_16.png",
+    "32": "images/convert_32.png",
+    "48": "images/convert_64.png",
+    "128": "images/convert_128.png"
+  },
+  "options_page": "options.html",
+  "manifest_version": 2
+}
